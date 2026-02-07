@@ -1,18 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager template</title>
-    
+
     <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-    <navbar>
-        
-        
 
-    </navbar>
+<body >
+
+    <!-- -------------------navbar-- start------------- -->
+
+    <nav id="navbar"
+        class="fixed top-0 left-0  w-full h-20 z-10 bg-[#0a1a0acc] border-black border-b-2  flex justify-between items-center ">
+
+        <!-- ----------------left nav----------- -->
+        <ul class="flex justify-center items-center ml-80 ">
+            <li>
+                <div id="logo" class="h-14 w-14  m-3.5 ">
+                    <img src="./required_images/logo.webp">
+
+                </div>
+            </li>
+
+            <li>
+                <div id="companyname"
+                    class="text-2xl md:text-3xl lg:text-4xl bg-clip-text text-transparent  bg-linear-to-r from-[#00f996]  via-[#00e8c8]  to-[#00dcea]  font-semibold">
+                    <h1>sobah's task app</h1>
+                </div>
+            </li>
+        </ul>
+
+        <!-- -----------right nav menu----------- -->
+
+
+        <!-- class=" text-white  text-[0.9rem] font-medium relative py-3
+                 px-6 border-solid border-2 rounded-full border-[#11502c]  flex gap-4 items-center justify-around gap-x-10 mr-100" -->
+        <ul>
+            <div
+                class="  text-white  text-[0.9rem] font-medium relative py-3
+                 px-6 border-solid border-2 rounded-full border-[#11502c]  flex gap-4 items-center justify-around gap-x-10 mr-100">
+
+                <li>
+                    <div id="searchimage" class="h-12 w-14 "><img src="./required_images/search-file.gif">
+
+                    </div>
+                </li>
+
+                <li id="searchbar">
+                    <input type="text" name="name" placeholder="SEARCH BAR"
+                        class="border rounded-full border-red-500 py-[5px] px-[10px] bg-white text-black text-[20px]">
+
+                </li>
+
+                <li id="loginpage">
+                    <div>
+                        <a href="#login">login</a>
+                    </div>
+                </li>
+
+                <li id="signup">
+                    <div>
+                        <a href="#signup">signup</a>
+                    </div>
+                </li>
+
+                <li id="pricing">
+                    <div>
+                        <a href="#pricing">pricing</a>
+
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </nav>
+   
+    <!-- ------------------------------------------nav bar complete--------------------------- -->
     
 </body>
+
 </html>
