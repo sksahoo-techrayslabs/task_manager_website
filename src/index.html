@@ -9,15 +9,15 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="bg-white pt-20">
+<body class="bg-linear-to-b from-[#f7d486]  to-[#f27a7d] pt-20">
     <!-- "bg-[url('./required_images/task-management-system-screenshot-1.png')] bg-cover bg-blend-color-burn" -->
     <!-- -------------------navbar-- start------------- -->
 
     <section id="navbar"
-        class="fixed top-0 left-0  w-full h-20 z-10 bg-[#0a1a0acc] border-black border-b-2  flex justify-between items-center ">
+        class="fixed top-0 left-0  w-full h-20 z-10 bg-[#95bca3] border-black border-b-2  flex flex-wrap justify-between items-center ">
 
         <!-- ----------------left nav----------- -->
-        <ul class="flex justify-center items-center ml-80 ">
+        <ul class="flex flex-wrap justify-center items-center ml-80 ">
             <li>
                 <div id="logo" class="h-14 w-14  m-3.5 ">
                     <img src="./required_images/logo.webp">
@@ -36,11 +36,8 @@
         <!-- -----------right nav menu----------- -->
 
 
-        <!-- class=" text-white  text-[0.9rem] font-medium relative py-3
-                 px-6 border-solid border-2 rounded-full border-[#11502c]  flex gap-4 items-center justify-around gap-x-10 mr-100" -->
-
         <ul class="  text-white  text-[0.9rem] font-medium relative py-3
-                 px-6 border-solid border-2 rounded-full border-[#11502c]  flex gap-4 items-center justify-around gap-x-10 mr-100">
+                 px-6 border-solid border-2 rounded-full border-[#11502c]  flex flex-wrap gap-4 items-center justify-around gap-x-10 mr-100">
 
 
             <li>
@@ -99,7 +96,7 @@
                 <!-- full Name -->
                 <div class="form-group ">
 
-                    <label for="name" class=" m-3 font-bold text-2xl flex justify-center">Full Name</label>
+                    <label for="name" class=" m-3 font-bold text-2xl flex flex-wrap justify-center">Full Name</label>
 
                     <input type="text" id="name" name="name" required
                         class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  ">
@@ -107,7 +104,7 @@
 
                 <!-- subject -->
                 <div class="form-group">
-                    <label for="subject" class=" m-3 font-bold text-2xl flex justify-center">what is your
+                    <label for="subject" class=" m-3 font-bold text-2xl flex flex-wrap justify-center">what is your
                         subject</label>
 
                     <input type="text" id="subject" name="subject" required
@@ -116,7 +113,7 @@
 
                 <!-- date -->
                 <div class="form-group">
-                    <label for="date" class=" m-3 font-bold text-2xl flex justify-center">Date</label>
+                    <label for="date" class=" m-3 font-bold text-2xl flex flex-wrap justify-center">Date</label>
 
                     <input type="date" id="date" name="date"
                         class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  ">
@@ -124,7 +121,7 @@
 
                 <!-- task -->
                 <div class="form-group">
-                    <label for="task" class=" m-3 font-bold text-2xl flex justify-center">Task</label>
+                    <label for="task" class=" m-3 font-bold text-2xl flex flex-wrap justify-center">Task</label>
 
                     <textarea id="message" name="message" placeholder="write todays task..." required
                         class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  "> </textarea>
@@ -148,13 +145,13 @@
             output task
         </h1>
         
-        <div id="taskslist" class="max-w-4xl mx-auto grid gap-6">
+        <div id="task-list" class="max-w-4xl mx-auto grid gap-6">
 
         </div>
         
 
     </section>
-
+<script type="module" src="/home/ssahoo/Documents/task manager template/dist/typescript.js"></script>
 </body>
 
 
