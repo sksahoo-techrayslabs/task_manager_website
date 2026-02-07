@@ -9,11 +9,11 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body >
-
+<body class="bg-white pt-20">
+    <!-- "bg-[url('./required_images/task-management-system-screenshot-1.png')] bg-cover bg-blend-color-burn" -->
     <!-- -------------------navbar-- start------------- -->
 
-    <nav id="navbar"
+    <section id="navbar"
         class="fixed top-0 left-0  w-full h-20 z-10 bg-[#0a1a0acc] border-black border-b-2  flex justify-between items-center ">
 
         <!-- ----------------left nav----------- -->
@@ -28,7 +28,7 @@
             <li>
                 <div id="companyname"
                     class="text-2xl md:text-3xl lg:text-4xl bg-clip-text text-transparent  bg-linear-to-r from-[#00f996]  via-[#00e8c8]  to-[#00dcea]  font-semibold">
-                    <h1>sobah's task app</h1>
+                    <h1>sobhan's task app</h1>
                 </div>
             </li>
         </ul>
@@ -38,47 +38,127 @@
 
         <!-- class=" text-white  text-[0.9rem] font-medium relative py-3
                  px-6 border-solid border-2 rounded-full border-[#11502c]  flex gap-4 items-center justify-around gap-x-10 mr-100" -->
-        <ul>
-            <div
-                class="  text-white  text-[0.9rem] font-medium relative py-3
+
+        <ul class="  text-white  text-[0.9rem] font-medium relative py-3
                  px-6 border-solid border-2 rounded-full border-[#11502c]  flex gap-4 items-center justify-around gap-x-10 mr-100">
 
-                <li>
-                    <div id="searchimage" class="h-12 w-14 "><img src="./required_images/search-file.gif">
 
-                    </div>
-                </li>
+            <li>
+                <div id="searchimage" class="h-12 w-14 "><img src="./required_images/search-file.gif">
 
-                <li id="searchbar">
-                    <input type="text" name="name" placeholder="SEARCH BAR"
-                        class="border rounded-full border-red-500 py-[5px] px-[10px] bg-white text-black text-[20px]">
+                </div>
+            </li>
 
-                </li>
+            <li id="searchbar">
+                <input type="text" name="name" placeholder="SEARCH BAR"
+                    class="border rounded-full border-red-500 py-[5px] px-[10px] bg-white text-black text-[20px]">
 
-                <li id="loginpage">
-                    <div>
-                        <a href="#login">login</a>
-                    </div>
-                </li>
+            </li>
 
-                <li id="signup">
-                    <div>
-                        <a href="#signup">signup</a>
-                    </div>
-                </li>
+            <li id="loginpage">
+                <div>
+                    <a href="#login">login</a>
+                </div>
+            </li>
 
-                <li id="pricing">
-                    <div>
-                        <a href="#pricing">pricing</a>
+            <li id="signup">
+                <div>
+                    <a href="#signup">signup</a>
+                </div>
+            </li>
 
-                    </div>
-                </li>
-            </div>
+            <li id="pricing">
+                <div>
+                    <a href="#pricing">pricing</a>
+
+                </div>
+            </li>
+
         </ul>
-    </nav>
-   
+    </section>
+
     <!-- ------------------------------------------nav bar complete--------------------------- -->
-    
+
+
+
+    <!-- ---------------------------------create task--------------------------------------------------------------------------------------- -->
+    <section id="createtask">
+        <!-- ---------------task container----------------- -->
+
+        <div id="taskform">
+
+            <h1 id="section-title"
+                class="box-border text-center mb-10 text-[40px] font-extrabold text-black underline ">
+                Mention your task
+            </h1>
+            <!-- ------------------------------------ -->
+
+            <form id="taskinput"
+                class=" box-border grid items-center justify-center mx-180 border-4 border-gray-400 p-10 rounded-4xl ">
+
+                <!-- full Name -->
+                <div class="form-group ">
+
+                    <label for="name" class=" m-3 font-bold text-2xl flex justify-center">Full Name</label>
+
+                    <input type="text" id="name" name="name" required
+                        class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  ">
+                </div>
+
+                <!-- subject -->
+                <div class="form-group">
+                    <label for="subject" class=" m-3 font-bold text-2xl flex justify-center">what is your
+                        subject</label>
+
+                    <input type="text" id="subject" name="subject" required
+                        class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  ">
+                </div>
+
+                <!-- date -->
+                <div class="form-group">
+                    <label for="date" class=" m-3 font-bold text-2xl flex justify-center">Date</label>
+
+                    <input type="date" id="date" name="date"
+                        class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  ">
+                </div>
+
+                <!-- task -->
+                <div class="form-group">
+                    <label for="task" class=" m-3 font-bold text-2xl flex justify-center">Task</label>
+
+                    <textarea id="message" name="message" placeholder="write todays task..." required
+                        class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  "> </textarea>
+                </div>
+                <br>
+
+                <!-- submit button -->
+                <button type="submit"
+                    class=" w-full p-5  bg-linear-to-r from-[#0aff8d] to-[#00dee3] border rounded-xl text-[18px] text-black font-bold cursor-pointer">
+                    Submit</button><br>
+
+            </form>
+        </div>
+
+    </section>
+    <br>
+<!-- -----------------------output------------------- -->
+    <section id="output" class="mt-10">
+        <h1
+            class="box-border  text-center mb-10 text-[40px] font-extrabold text-black underline ">
+            output task
+        </h1>
+        
+        <div id="taskslist" class="max-w-4xl mx-auto grid gap-6">
+
+        </div>
+        
+
+    </section>
+
 </body>
+
+
+
+
 
 </html>
