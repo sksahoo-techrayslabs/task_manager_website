@@ -1,3 +1,2 @@
-
-// export {};
+export {};
 //# sourceMappingURL=typescript.js.map

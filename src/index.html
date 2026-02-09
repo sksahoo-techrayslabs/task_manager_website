@@ -10,14 +10,14 @@
 </head>
 
 <body class="bg-linear-to-b from-[#f7d486]  to-[#f27a7d] pt-20">
-    <!-- "bg-[url('./required_images/task-management-system-screenshot-1.png')] bg-cover bg-blend-color-burn" -->
+
     <!-- -------------------navbar-- start------------- -->
 
     <section id="navbar"
-        class="fixed top-0 left-0  w-full h-20 z-10 bg-[#95bca3] border-black border-b-2  flex flex-wrap justify-between items-center ">
+        class="fixed top-0 left-0 w-full min-h-20 z-10 bg-[#95bca3] border-black border-b-2  flex flex-col md:flex-row justify-between items-center ">
 
         <!-- ----------------left nav----------- -->
-        <ul class="flex flex-wrap justify-center items-center ml-80 ">
+        <ul class="flex flex-wrap justify-center items-center ml-0 md:ml-10 lg:ml-20">
             <li>
                 <div id="logo" class="h-14 w-14  m-3.5 ">
                     <img src="./required_images/logo.webp">
@@ -37,7 +37,7 @@
 
 
         <ul class="  text-white  text-[0.9rem] font-medium relative py-3
-                 px-6 border-solid border-2 rounded-full border-[#11502c]  flex flex-wrap gap-4 items-center justify-around gap-x-10 mr-100">
+                 px-6 border-solid border-2 rounded-full border-[#11502c]  flex flex-wrap gap-4 items-center justify-around gap-x-10 mr-0 md:mr-10 lg:mr-20 mt-3 md:mt-0">
 
 
             <li>
@@ -48,7 +48,7 @@
 
             <li id="searchbar">
                 <input type="text" name="name" placeholder="SEARCH BAR"
-                    class="border rounded-full border-red-500 py-[5px] px-[10px] bg-white text-black text-[20px]">
+                    class="border rounded-full border-red-500 py-1.25 px-2.5 bg-white text-black text-[20px]">
 
             </li>
 
@@ -91,7 +91,7 @@
             <!-- ------------------------------------ -->
 
             <form id="taskinput"
-                class=" box-border grid items-center justify-center mx-180 border-4 border-gray-400 p-10 rounded-4xl ">
+                class=" box-border  border-gray-400 rounded-4xl  grid items-center justify-center mx-auto w-full max-w-xl border-4 p-6 md:p-10   ">
 
                 <!-- full Name -->
                 <div class="form-group ">
@@ -99,7 +99,7 @@
                     <label for="name" class=" m-3 font-bold text-2xl flex flex-wrap justify-center">Full Name</label>
 
                     <input type="text" id="name" name="name" required
-                        class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  ">
+                        class="border rounded-xl border-[#00ff8833] w-full py-4 px-5 bg-[#00ff8833]  ">
                 </div>
 
                 <!-- subject -->
@@ -108,7 +108,7 @@
                         subject</label>
 
                     <input type="text" id="subject" name="subject" required
-                        class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  ">
+                        class="border rounded-xl border-[#00ff8833] w-full py-4 px-5 bg-[#00ff8833]  ">
                 </div>
 
                 <!-- date -->
@@ -116,15 +116,15 @@
                     <label for="date" class=" m-3 font-bold text-2xl flex flex-wrap justify-center">Date</label>
 
                     <input type="date" id="date" name="date"
-                        class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  ">
+                        class="border rounded-xl border-[#00ff8833] w-full py-4 px-5 bg-[#00ff8833]  ">
                 </div>
 
                 <!-- task -->
                 <div class="form-group">
-                    <label for="task" class=" m-3 font-bold text-2xl flex flex-wrap justify-center">Task</label>
+                    <label for="message" class=" m-3 font-bold text-2xl flex flex-wrap justify-center">Task</label>
 
                     <textarea id="message" name="message" placeholder="write todays task..." required
-                        class="border rounded-xl border-[#00ff8833] w-100 py-4 px-5 bg-[#00ff8833]  "> </textarea>
+                        class="border rounded-xl border-[#00ff8833] w-full py-4 px-5 bg-[#00ff8833]  "> </textarea>
                 </div>
                 <br>
 
@@ -145,13 +145,16 @@
             output task
         </h1>
         
-        <div id="task-list" class="max-w-4xl mx-auto grid gap-6">
+        <div id="task-list" class="max-w-4xl mx-auto grid gap-6 px-4">
 
         </div>
         
 
     </section>
-<script type="module" src="/home/ssahoo/Documents/task manager template/dist/typescript.js"></script>
+<script src="../dist/typescript.js"></script>
+
+
+
 </body>
 
 
