@@ -36,7 +36,8 @@ form.addEventListener("submit", function (event) {
     message: (document.getElementById("message") as HTMLTextAreaElement).value,
     status: "pending",
   };
-
+  
+  alert("task added");
 
   tasks.push(task);
   localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -119,9 +120,13 @@ function showtasks() {
     };
 
     deletebtn.onclick = function () {
-      tasks.splice(index, 1);
+      const isconfirmed=confirm("are you sure want to delete this ?");
+      if (isconfirmed){
+        tasks.splice(index, 1);
       localStorage.setItem("tasks", JSON.stringify(tasks));
       showtasks();
+      }
+      
     };
 
     if (task.status === "completed") {

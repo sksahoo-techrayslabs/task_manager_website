@@ -18,6 +18,7 @@ form.addEventListener("submit", function (event) {
         message: document.getElementById("message").value,
         status: "pending",
     };
+    alert("task added");
     tasks.push(task);
     localStorage.setItem("tasks", JSON.stringify(tasks));
     showtasks();
@@ -76,9 +77,12 @@ function showtasks() {
             }
         };
         deletebtn.onclick = function () {
-            tasks.splice(index, 1);
-            localStorage.setItem("tasks", JSON.stringify(tasks));
-            showtasks();
+            var isconfirmed = confirm("are you sure want to delete this ?");
+            if (isconfirmed) {
+                tasks.splice(index, 1);
+                localStorage.setItem("tasks", JSON.stringify(tasks));
+                showtasks();
+            }
         };
         if (task.status === "completed") {
             completebtn.textContent = "MArk as pending";
