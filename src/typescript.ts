@@ -83,12 +83,39 @@ function showtasks() {
 };
 
     editbtn.onclick = function () {
+      const newname = prompt("Edit name", task.name);
+      const newsub = prompt("Edit task", task.subject);
+      const newdate = prompt("Edit task", task.date);
       const newmsg = prompt("Edit task", task.message);
-      if (newmsg != null) {
-        tasks[index]!.message = newmsg;
+
+      if (newname != null) {
+        tasks[index]!.name = newname;
+        
         localStorage.setItem("tasks", JSON.stringify(tasks));
         showtasks();
       }
+
+      if (newsub != null) {
+        tasks[index]!.name = newsub;
+        
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        showtasks();
+      }
+
+      if (newdate != null) {
+        tasks[index]!.name = newdate;
+        
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        showtasks();
+      }
+       
+      if (newmsg != null) {
+        tasks[index]!.message = newmsg;
+
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        showtasks();
+      }
+      
     };
 
     deletebtn.onclick = function () {
